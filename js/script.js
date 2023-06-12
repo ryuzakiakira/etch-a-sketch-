@@ -2,7 +2,7 @@
 
 const grid = document.querySelector('#grid')
 
-function createDiv(sizeOfGrid = 36) {
+function createDiv(sizeOfGrid = 16) {
     let girdSize = sizeOfGrid * sizeOfGrid
     for (let i = 1; i <= girdSize; i++) {
         let div = document.createElement('div');
@@ -48,7 +48,7 @@ function girdSize() {
         alert("Grid Size too big")
     } else {
         reset()
-        createDiv(Number(sizeOfGrid));
+        createDiv(sizeOfGrid);
     };
 }
 
