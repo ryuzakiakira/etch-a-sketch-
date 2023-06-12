@@ -1,5 +1,7 @@
 body {
     padding: 50px;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(255, 81, 0, 0.521);
 }
 
 .container {
@@ -8,14 +10,24 @@ body {
     gap: 50px;
 }
 
-.grid {
+/* #grid {
     display: grid;
-    grid-template-columns: repeat(16, 40px);
-    grid-template-rows: repeat(16, 40px);
-}
+    grid-template-columns: repeat(16, 35px);
+    grid-template-rows: repeat(16, 35px);
+    border: solid 1px;
+    box-shadow: 15px 15px 15px;
+} */
 
-.grid > div {
-    border: solid black 1px;
+/* #grid {
+    max-width: 600px;
+    max-height: 600px;
+    display: flex;
+} */
+
+#grid > div {
+    /* height: 35px;
+    width: 35px; */
+    border: solid rgba(0, 0, 0, 0.295) 1px;
 }
 
 .buttons {
@@ -26,6 +38,18 @@ body {
 }
 
 .btn {
-    height: 25px;
+    height: 50px;
     width: 100px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+    background-color: antiquewhite;
+}
+
+.btn:hover {
+    box-shadow: 15px 15px 15px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
 }

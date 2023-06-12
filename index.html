@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch A Sketch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="buttons">
-            <button id="reset" class="btn">Reset</button>
+    <main>
+        <h1>Etch-A-Sketch</h1>
+        <div class="container">
+            <div class="buttons">
+                <button id="changeGrid" class="btn">Grid Size</button>
+                <button id="reset" class="btn">Reset</button>
+            </div>
+            <div id="grid"></div>
         </div>
-        <div class="grid"></div>
-    </div>
+    </main>
 </body>
 </html>
