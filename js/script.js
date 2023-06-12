@@ -10,7 +10,7 @@ function createDiv(sizeOfGrid = 36) {
         grid.appendChild(div);
     };
     let gridChange = document.querySelector('#grid');
-    gridChange.style.cssText = `display: grid; grid-template-columns: repeat(${sizeOfGrid}, 16px); grid-template-rows: repeat(${sizeOfGrid}, 16px); border: solid 1px; box-shadow: 15px 15px 15px;`
+    gridChange.style.cssText = `display: grid; grid-template-columns: repeat(${sizeOfGrid}, 1fr); grid-template-rows: repeat(${sizeOfGrid}, 1fr); border: solid 1px; box-shadow: 15px 15px 15px;`
 }
 
 createDiv()
@@ -43,8 +43,8 @@ resetButton.addEventListener('click', reset)
 // change grid size according to user input
 
 function girdSize() {
-    let sizeOfGrid = prompt('Please enter the size of the drawing Area. (Should not exceed 36)', '');
-    if (sizeOfGrid > 36) {
+    let sizeOfGrid = prompt('Please enter the size of the drawing Area. (Should not exceed 100)', '');
+    if (sizeOfGrid > 100) {
         alert("Grid Size too big")
     } else {
         reset()
