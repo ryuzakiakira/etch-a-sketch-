@@ -1,7 +1,8 @@
 // create a grid of 16x16 square divs
 
+const grid = document.querySelector('.grid')
+
 function createDiv() {
-    const grid = document.querySelector('.grid')
     for (let i = 1; i <= 256; i++) {
         let div = document.createElement('div');
         div.setAttribute('id', `div${i}`);
@@ -18,6 +19,17 @@ function changeColor(e) {
     div.style.cssText = 'background-color: black;'
 }
 
-window.addEventListener('mouseover', function(event){
+grid.addEventListener('mouseover', function(event){
     changeColor(event);
 })
+
+// reset the grid
+
+function reset() {
+    let divAll = document.querySelectorAll('.grid > div');
+    divAll.forEach(div => grid.removeChild(div));
+    createDiv()
+}
+
+const resetButton = document.getElementById('reset');
+resetButton.addEventListener('click', reset)

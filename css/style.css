@@ -22,13 +22,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .btn {
     height: 25px;
+    width: 100px;
 }
-
-/* .grid > div:hover {
-    background-color: black;
-} */
