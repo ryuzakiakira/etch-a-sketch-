@@ -2,7 +2,7 @@
 
 const grid = document.querySelector('#grid')
 
-function createDiv(sizeOfGrid = 22) {
+function createDiv(sizeOfGrid = 36) {
     let girdSize = sizeOfGrid * sizeOfGrid
     for (let i = 1; i <= girdSize; i++) {
         let div = document.createElement('div');

@@ -7,26 +7,20 @@ body {
 .container {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 50px;
+    height: 70vh;
 }
 
-/* #grid {
+.grid {
     display: grid;
-    grid-template-columns: repeat(16, 35px);
-    grid-template-rows: repeat(16, 35px);
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
     border: solid 1px;
     box-shadow: 15px 15px 15px;
-} */
+}
 
-/* #grid {
-    max-width: 600px;
-    max-height: 600px;
-    display: flex;
-} */
-
-#grid > div {
-    /* height: 35px;
-    width: 35px; */
+.grid > div {
     border: solid rgba(0, 0, 0, 0.295) 1px;
 }
 
