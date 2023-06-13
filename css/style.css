@@ -1,5 +1,5 @@
 body {
-    padding: 50px;
+    padding: 30px;
     font-family: 'Raleway', sans-serif;
     background-color: rgba(255, 81, 0, 0.521);
 }
@@ -34,6 +34,7 @@ body {
     border-radius: 10px;
     box-shadow: 5px 5px 5px;
     background-color: antiquewhite;
+    margin: 10px;
 }
 
 .btn:hover {
@@ -42,5 +43,8 @@ body {
 
 h1 {
     text-align: center;
-    margin-bottom: 50px;
+    margin-top: 0px;
+    margin-bottom: 80px;
+    font-weight: 900;
+    font-size: 50px;
 }
