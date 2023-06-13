@@ -12,14 +12,6 @@ body {
     height: 70vh;
 }
 
-/* .grid {
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
-    border: solid 1px;
-    box-shadow: 15px 15px 15px;
-} */
-
 .grid {
     width: 600px;
     height: 600px;

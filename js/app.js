@@ -34,11 +34,14 @@ grid.addEventListener('mouseover', function(event){
 function reset() {
     let divAll = document.querySelectorAll('#grid > div');
     divAll.forEach(div => grid.removeChild(div));
-    createDiv()
+   
 }
 
 const resetButton = document.getElementById('reset');
-resetButton.addEventListener('click', reset)
+resetButton.addEventListener('click', function() {
+    reset()
+    createDiv()
+})
 
 // change grid size according to user input
 
@@ -48,7 +51,7 @@ function girdSize() {
         alert("Grid Size too big")
     } else {
         reset()
-        createDiv(sizeOfGrid);
+        createDiv(Number(sizeOfGrid));
     };
 }
 
